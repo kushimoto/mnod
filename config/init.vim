@@ -58,5 +58,8 @@ nnoremap <silent> <Leader>m :OverCommandLine<CR>
 
 "They are window layouts. They will be executed with starting nvim.
 autocmd VimEnter * execute 'syntax on'
+autocmd VimEnter * execute 'sp | terminal'
 autocmd VimEnter * call feedkeys("\<CR>", "n")
+autocmd VimEnter * call feedkeys("\<C-w>x", "n")
 autocmd VimEnter * execute 'CocCommand explorer'
+autocmd VimResized * wincmd =

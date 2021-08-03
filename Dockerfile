@@ -39,6 +39,7 @@ RUN timeout 40s nvim --headless; exit 0
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache \
+    openssh \
     go && \
     go get -u golang.org/x/tools/gopls@latest
 

@@ -1,0 +1,31 @@
+# Required:
+
+# Plugin manager
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# Replace helper
+[[plugins]]
+repo = 'osyo-manga/vim-over'
+
+# Comment toggler
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+# Vim decoration
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+# Addtional Colorscheme
+[[plugins]]
+repo = 'tomasr/molokai'
+
+# IDE like
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
+hook_add = '''
+source ~/.config/nvim/coc.rc.vim
+'''

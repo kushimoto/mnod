@@ -7,7 +7,7 @@ nvim の alias に設定することであたかもネイティブで動かし�
 ## build
 
 ```
-$ docker build ./ -t kushimoto/nmod
+$ docker build ./ -t kushimoto/mnod
 ```
 
 ## alias

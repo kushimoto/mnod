@@ -5,6 +5,7 @@ let g:coc_global_extensions = [
   \ "coc-eslint",
   \ "coc-html",
   \ "coc-css",
+  \ "coc-phpls",
   \ ]
 
 let g:coc_react = {

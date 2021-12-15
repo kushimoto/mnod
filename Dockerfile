@@ -34,7 +34,7 @@ COPY ./config/toml/dein.toml /root/.config/nvim/toml/
 COPY ./config/toml/dein_lazy.toml /root/.config/nvim/toml/
 
 RUN nvim -c "q"
-RUN timeout 40s nvim --headless; exit 0
+RUN timeout 120s nvim --headless; exit 0
 
 RUN apk update && \
     apk upgrade && \

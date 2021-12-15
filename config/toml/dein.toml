@@ -10,9 +10,10 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 on_i = 1
 merged = '0'
-hook_add = '''
+hook_source = '''
 source ~/.config/nvim/coc.rc.vim
 '''
+
 # Replace helper
 [[plugins]]
 repo = 'osyo-manga/vim-over'

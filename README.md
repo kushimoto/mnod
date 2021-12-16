@@ -16,4 +16,11 @@ $ docker build ./ -t kushimoto/mnod
 $ alias nvim='docker run --rm -it -u $(id -u):$(id -g) -e HOME=/root -v $HOME:$HOME:cached --workdir=$(pwd) kushimoto/mnod'
 ```
 
+### rootで使う場合
+```
+alias nvim='docker run --rm -it -u $(id -u):$(id -g) -v /:/HOST --workdir=/HOST$(pwd) kushimoto/mnod'
+```
+rootで使う場合は実際にrootユーザーが存在する影響でnvimの設定が消えてしまうので/HOSTというディレクトリを設定して
+そこにすべてマウントするようにしています。rootでヘビーな作業をすべきではないと思いますが一応...
+
 docker hub を利用すれば便利だろうが今のところ私は使っていない。
